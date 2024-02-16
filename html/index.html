@@ -10,13 +10,38 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="index.css">
         <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+        <script src="https://cdn.plot.ly/plotly-2.29.1.min.js" charset="utf-8"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <div class="Toolbar"> 
+            Toolbar
+        </div>
+            
+        <div class="Middle">
+            <div class="Options">
+                Options
+            </div>
+
+            <div class="Graph" id="gd">
+            <script> 
+                Plotly.newPlot("gd", /* JSON object */ {
+                    "data": [{"y": [1, 2, 3]}], 
+                    "layout": {"width":800, "height":600}
+
+                })
+            </script> 
+            </div>
+        </div>
+
+        <div class="Bottom">
+            bottom options
+        </div>
 
         
         <script src="" async defer></script>
